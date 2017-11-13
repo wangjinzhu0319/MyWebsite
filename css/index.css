@@ -1,0 +1,132 @@
+*{box-sizing: border-box; color: #fff;}
+body{overflow-x: hidden !important;}
+a:focus{outline: none !important;}
+/*********************************************锟诫场锟斤拷锟斤拷锟斤拷始************************************************************/
+.modal1{position: fixed; width: 100%; height: 100%; background: #b6c29a; cursor: pointer; left: 0; top: 0; z-index: 10000;}
+#source{display:none}
+#output{position: fixed; width: 100%; text-align: center; left:0; top: 40%; font-size: 28px; color:white}
+/*********************************************锟斤拷锟斤拷锟斤拷始************************************************************/
+header{ width: 100%; background: rgba(255,255,255,0.28); z-index: 70; height:40px; position: fixed; right: 0; top: 0; }
+#menu {  list-style-type: none; float: right}
+#menu li { float: left; margin: 0 10px 0 0; font-size: 14px;}
+#menu li a { float: right; color: #fff; padding: 10px 20px; text-decoration: none;}
+#menu .active a::after{display: block; content: ''; height: 2px; width:100%; background: #fff}
+#menu .active a { color: #fff; background:0;}
+#menu li a:focus{border: 0;}
+/*锟斤拷叩锟斤拷锟?*/
+
+#fp-nav li{margin-bottom: 15px !important;}
+#fp-nav li a span{ background:#ff9daa !important; border:2px solid #ff9daa !important; }
+#fp-nav li a.active span{background:transparent !important;width: 15px !important; height: 15px !important;
+    transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;}
+/*********************************************锟斤拷锟斤拷锟斤拷锟斤拷************************************************************/
+
+/*********************************************锟斤拷页锟斤拷始************************************************************/
+.shouye{
+    background: url("../image/bg.png") #87b0a5;
+}
+
+.shouye .fp-tableCell .ball{text-align: center; background:url("../image/bg1_03.gif")no-repeat 20px center }
+.shouye .fp-tableCell .ball img{animation: both1 linear 7s;animation-iteration-count:infinite;}
+@keyframes both1 {
+    0%{transform:rotateZ(0deg); }
+    100%{transform:rotateZ(360deg) }
+}
+.shouye .word{ padding-top: 50px; padding-left: 0;}
+.shouye .word h2{background:url("../image/line.png")no-repeat center 99%; padding-bottom:12px; margin-bottom: 0; font-size: 40px; }
+.shouye .word h2:nth-last-child(1){margin-bottom: 50px;}
+
+/*********************************************锟斤拷页锟斤拷锟斤拷************************************************************/
+/*********************************************锟斤拷锟斤拷锟揭匡拷始************************************************************/
+.about{
+    background: url("../image/bg.png") #109085;
+}
+.about .fp-tableCell{vertical-align: inherit; overflow-y: hidden }
+.about .pic{width: 220px; height: 220px; margin: 20vh auto 0; -webkit-margin-top:20vh;  padding-top: 10px; border-radius: 50%; background:rgba(255,255,255,.58)}
+.about .pic .img{width: 200px; height: 200px; border-radius: 50%; margin:0 auto;}
+.about .pic .img img{width: 200px; height: 200px; border-radius: 50%;}
+.about h4{display: none}
+.about p{font-size:24px; display: none }
+.about p.motto{font-size: 18px; margin-top: 15px;font-family: 'Courier'}
+.about span.line{width: 0%; display: block; height:4px; background: rgba(255,255,255,0.4); margin: auto}
+.about .container>img{position: absolute; width: 100%; bottom:-40px; left: 0;z-index:2}
+    /*********************************************锟斤拷锟斤拷锟揭斤拷锟斤拷************************************************************/
+
+/*********************************************专业锟斤拷锟杰匡拷始************************************************************/
+.zhuanye{
+
+    background: url("../image/bg.png") #b6c29a;
+}
+.zhuanye .fp-tableCell{vertical-align: inherit; background: url("../image/star.png") no-repeat center center ;}
+.section .fp-tableCell h3{margin-top: 15vh;  margin-bottom: 8vh; height: 30px; line-height: 30px; }
+.section .fp-tableCell h3 span{display: inline-block; width:20%; margin:0 2% 6px;  height: 3px; background: #fff; }
+.progressbar {width: 80%; height: 28px; margin: 5px auto 20px; position: relative; line-height: 28px; padding-left: 10%; border-radius:14px;
+  background-color: rgba(255,255,255,0.3); box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);  }
+.progressbar .course{position: absolute; left:10px; text-align: right; font-size: 16px; width: 10%; }
+.progressbar .course span{padding-left: 4px;}
+.proggress{ height: 28px; width: 0;font-size: 16px; border-top-right-radius:14px; border-bottom-right-radius:14px; }
+/*********************************************专业锟斤拷锟杰斤拷锟斤拷************************************************************/
+
+/*********************************************锟斤拷目展示锟斤拷始************************************************************/
+.xiangmu{
+
+    background: url("../image/bg.png") #6C88AB;
+}
+.xiangmu .fp-tableCell{vertical-align: inherit; }
+.xiangmu #banner{width:100%;height:auto;position:relative;}
+.xiangmu #banner_img{display:block;}
+.xiangmu #banner_img li{width:100%;display:none;}
+.xiangmu #banner_img li.item1{display:block;}
+.xiangmu #banner #banner_img li.item1 .wrapper{width:100%;margin:0 auto;position:relative;}
+.xiangmu #banner_img .ad_img{position:absolute;right:10px;top:0; width:700px; border-radius:10px; overflow: hidden}
+.xiangmu #banner_img .ad_img img{width: 100%;}
+.xiangmu #banner_img .ad_txt{position:absolute; width:33%;left:10px;top:10px;color:#fff;text-shadow:1px 1px rgba(51,51,51,0.3);}
+.xiangmu #banner_img .ad_txt h2{font:400 36px/60px Microsoft YaHei; text-align: left;}
+.xiangmu #banner_img .ad_txt p{ text-align: left; width:100%; line-height:24px; font-size: 16px;}
+.xiangmu #banner_img .ad_txt a{display:block;width:100px;height:36px;line-height:36px; border: 1px solid #fff; transition: all .5s; text-align:center;margin-top:22px;background:#fff;color:#666;text-decoration:none;text-shadow:none;}
+.xiangmu #banner_img .ad_txt a:hover{background:transparent; color: #fff;}
+.xiangmu #banner_ctr{position: relative; top: 65vh ; left:50%; margin-left: -50px; z-index: 100000000;}
+.xiangmu #banner_ctr li{display:block;float:left; margin-right: 20px; width:20px;height:20px;cursor:pointer;border-radius:50%; background: #fff;}
+.xiangmu #banner_ctr li:last-of-type(1){margin-right: 0;}
+.xiangmu #banner_ctr li.active1{background:#0084cf;}
+/*********************************************锟斤拷目展示锟斤拷锟斤拷************************************************************/
+
+/*********************************************锟斤拷系锟揭匡拷始************************************************************/
+.lianxi{
+
+    background: url("../image/bg.png") #9e977d;
+}
+.lianxi .fp-tableCell{vertical-align: inherit}
+.lianxi .container>p.caise{justify-content: space-between;}
+.lianxi .container>p.caise span{ font-size: 22px; margin-right: 20px;}
+.lianxi .container>p.caise span:nth-of-type(1){color: red;}
+.lianxi .container>p.caise span:nth-of-type(2){color:#3cf}
+.lianxi .container>p.caise span:nth-of-type(3){color:#6c0}
+.lianxi .container>p.caise span:nth-last-child(1){margin-right: 0; color: #f63}
+.lianxi .container>p.mingyan{font-size:18px; margin-bottom: 10vh; line-height:36px;margin-top: 20px; }
+.links a{width: 50px; height: 50px; margin-right: 20px; display: inline-block; position: relative; border:1px solid #fff; border-radius: 50%;}
+.links a img{    width: 60%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translateX(50%) translateY(-50%);
+    transform: translateX(50%) translateY(-50%);}
+/*********************************************锟斤拷系锟揭斤拷锟斤拷************************************************************/
+
+@media screen and (max-width: 768px){
+    #fp-nav{display: none}
+    #menu li{margin-right: 0;}
+    #menu li a{padding: 10px 15px;}
+    .about .pic{margin-top:20vh}
+    .shouye .fp-tableCell{background: none}
+    body section{height: auto !important; padding: 0;display: table !important;}
+    .fp-tableCell{height: auto !important; display: table !important;}
+    .lianxi .links>div a img{width:100%;}
+    .progressbar{width: 100%;}
+}
+.modal p{color: #000; font-size:20px; margin-bottom: 0;}
+.modal .modal-header{position:relative; }
+.modal .modal-header .close{position:absolute; top: 0; right: 0; font-size: 28px;}
